@@ -26,7 +26,13 @@ jobs:
         env:
           SOME_SECRET: ${{ secrets.SOME_SECRET }}
         run: python src/components/data_fetching.py
-          
+        
+      - name: execute py script # run main.py
+        env:
+          SOME_SECRET: ${{ secrets.SOME_SECRET }}
+        run: python src/components/data_preprocessing_and_feature_engineering.py
+        
+        
       - name: commit files
         run: |
           git config --local user.email "action@github.com"
