@@ -1,0 +1,2 @@
+[ 2023-04-25 20:29:54,026 ] 63 root - WARNING - Requests made without an app_token will be subject to strict throttling limits.
+[ 2023-04-25 20:31:22,345 ] 66 root - INFO - Read the gsw schedule dataset as df_games

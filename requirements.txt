@@ -1,0 +1,17 @@
+pandas
+numpy
+matplotlib
+scikit-learn
+catboost
+xgboost
+sodapy
+meteostat
+openpyxl
+geopandas
+folium
+streamlit
+pymongo
+streamlit-folium
+certifi
+
+-e .
