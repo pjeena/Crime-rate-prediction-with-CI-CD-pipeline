@@ -1,0 +1,12 @@
+[ 2023-04-25 23:22:59,038 ] 30 root - INFO - Entered the data ingestion method
+[ 2023-04-25 23:23:00,807 ] 35 root - INFO - Read the dataset from mongo db
+[ 2023-04-25 23:23:00,827 ] 40 root - INFO - Train test split initiated
+[ 2023-04-25 23:23:00,846 ] 46 root - INFO - Data ingestion completed
+[ 2023-04-25 23:23:00,867 ] 82 root - INFO - Load test train data completed
+[ 2023-04-25 23:23:00,867 ] 84 root - INFO - obtaining preprocessing object
+[ 2023-04-25 23:23:00,867 ] 56 root - INFO - Categorical columns: ['police_district', 'incident_day_of_week']
+[ 2023-04-25 23:23:00,867 ] 57 root - INFO - Numerical columns: ['avg_temperature', 'wind_speed', 'day', 'month', 'year']
+[ 2023-04-25 23:23:00,868 ] 98 root - INFO - Applying preprocessing object on training dataframe and testing dataframe.
+[ 2023-04-25 23:23:00,891 ] 110 root - INFO - Saved preprocessing object.
+[ 2023-04-25 23:23:00,892 ] 35 root - INFO - Split training and test input data
+[ 2023-04-25 23:28:48,125 ] 104 root - INFO - Best found model on both training and testing dataset
