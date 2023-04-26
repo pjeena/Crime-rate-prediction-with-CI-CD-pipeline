@@ -54,7 +54,7 @@ The pipeline is triggered automatically whenever new data is available, ensuring
 
 ## Dashboard
 
-The predicted data was visualized by projecting it to a folium map(https://pjeena-real-time-crime-rate-detection-using-ci-cd-app-knxaip.streamlit.app/) showing the predicted number of crimes in each district of San Francisco. 
+The predicted data was visualized by projecting it to a folium [map](https://pjeena-real-time-crime-rate-detection-using-ci-cd-app-knxaip.streamlit.app/) showing the predicted number of crimes in each district of San Francisco. 
 
 
 ## Conclusion
