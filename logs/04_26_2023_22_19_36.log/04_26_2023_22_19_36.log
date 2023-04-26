@@ -1,0 +1,4 @@
+[ 2023-04-26 22:19:37,317 ] 1020 matplotlib.font_manager - INFO - Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: In FT2Font: Can not load face (unknown file format; error code 0x2)
+[ 2023-04-26 22:19:37,555 ] 1544 matplotlib.font_manager - INFO - generated new fontManager
+[ 2023-04-26 22:19:38,021 ] 63 root - WARNING - Requests made without an app_token will be subject to strict throttling limits.
+[ 2023-04-26 22:19:54,073 ] 66 root - INFO - Read the gsw schedule dataset as df_games
