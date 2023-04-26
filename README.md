@@ -27,9 +27,9 @@ Before building the machine learning model, the collected data is preprocessed t
 **Feature selection**: select the most relevant features using techniques correlation analysis and feature importance ranking.
 
 
-## *Model Building*
+## Model Building
 
-After getting the data in the appropriate format, several models(Linear regression, Random forest, Gradient boosting algorithms) were tried on historical data and evaluated using R2 score. The best model came out to be Xgboost with around 85% accuracy. Therefore, it was used for real time prediction. 
+After getting the data in the appropriate format, several models(Linear regression, Random forest, Gradient boosting algorithms) were tried on historical data with hyper parameter tuning and evaluated using R2 score. The best model came out to be Xgboost with around 85% accuracy. Therefore, it was used for real time prediction. 
 
 ## CI/CD Pipeline
 
@@ -47,6 +47,11 @@ To automate data fetching, data processing, model training, and deployment, a CI
 
 
 The pipeline is triggered automatically whenever new data is available, ensuring that the model is always up-to-date and accurate.
+
+## Dashboard
+
+The predicted data was visualized by projecting it to a folium map(https://pjeena-real-time-crime-rate-detection-using-ci-cd-app-knxaip.streamlit.app/) showing the predicted number of crimes in each district of San Francisco. 
+
 
 ## Conclusion
 
