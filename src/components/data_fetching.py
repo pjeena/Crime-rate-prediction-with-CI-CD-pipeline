@@ -21,7 +21,10 @@ def fetch_data_incidents(limit : int):
     limit -> no of records fetched
     '''
     # get client
-    client = Socrata("data.sfgov.org", None)
+    client = Socrata("data.sfgov.org",
+                      app_token='T6GNOI2SBaeRzeggL3AdluYVw',
+                      username="jeenapiyush101@gmail.com",
+                      password="MuB$rAJU2XKwsq7")
 
     #get data from the API
     results = client.get("wg3w-h783", limit=limit)
