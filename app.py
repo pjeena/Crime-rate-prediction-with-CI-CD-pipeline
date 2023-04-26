@@ -3,6 +3,7 @@ import pandas as pd
 import warnings
 warnings.filterwarnings("ignore")
 
+import logging
 from sklearn.preprocessing import StandardScaler
 from src.pipeline.predict_pipeline import PredictPipeline
 from src.utils import fetch_temperature_data
@@ -122,18 +123,19 @@ if choice == 'Yes':
             "**Year (YYYY)**", options=  ('',) + tuple(np.arange(2018, 2051))
         )
 
+        CHK = True
+        try :
+            datetime(year,month,day) # raises exception if date entered is wrong, and goes to except block
+        except Exception as e :
+#            logging.error(e)
+            CHK= False  # initialised to false if exception is raised        
+
+
 
         gsw_schedule = st.radio(
                         "# **Do the Golden State Warriors have a game today?**",
                         ('Yes', 'No'))
 
-        
-
-#elif choice == "Not sure":
-#    with st.sidebar:
-#        st.write('thanks')
-
- #   st.write('Thanks for stopping by')   
 
 
 else:
@@ -148,13 +150,18 @@ else:
 
 
 
+col_d1, col_d2, col_d3 = st.columns(3)
+with col_d2:
+        if choice == 'Yes' and CHK == False and day != '' and month != '' and year != '':
+                st.markdown('## :sos: :red[Enter correct date]')
+                st.markdown('#### :red[{}-{}-{}] :calendar: is not valid'.format(day,month,year))
 
 
 
 
 
 
-if choice == 'Yes' and day != '' and month != '' and year != '':
+if choice == 'Yes' and CHK == True and day != '' and month != '' and year != '':
 #st.write(year)
     
     date_of_interest = datetime(year,month,day)
@@ -163,7 +170,7 @@ if choice == 'Yes' and day != '' and month != '' and year != '':
     if weather.empty:
         col_1, col_2, col_3 = st.columns(3)
         with col_2:
-            st.markdown('######  :sos: The weather forecast is only available for the next 5 days from the current date. \
+            st.markdown('######  :sos: The weather forecast is only available for the next 5 days(approximately) from the current date. \
                         So, its not possible to predict the outcome for a very far date.')
 
     else:
