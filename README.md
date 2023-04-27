@@ -14,7 +14,7 @@ The project collects data from the following APIs:
 
 [Weather API](https://dev.meteostat.net/python/): provides information about weather conditions in San Francisco, including temperature, humidity, wind speed, and precipitation.
 
-[Basketball schedule](https://www.basketball-reference.com/): provides information about NBA games that take place in San Francisco(Golden State Warriors), including the date, time, and location of the games.
+[Basketball schedule](https://www.basketball-reference.com/): provides information about NBA games that take place in San Francisco(Golden State Warriors), including the date, home or away, win or loss.
 
 The collected data is then preprocessed and inserted into [MongoDB](https://www.mongodb.com/), a document-oriented database that stores the data in a parquet format since its more efficient data format for bigger files. 
 
