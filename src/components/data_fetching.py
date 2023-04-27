@@ -79,7 +79,7 @@ if __name__=='__main__':
     end_date = datetime.today()
     end_date = end_date.replace(minute=0, hour=0, second=0, microsecond=0)
 
-    df_incidents = fetch_data_incidents(limit=200000)
+    df_incidents = fetch_data_incidents(limit=800000)
     df_temperature = fetch_temperature_data(start_date, end_date , latitude=37.7775, longitude= -122.416389,altitude=None)
     df_gsw_schedule = fetch_gsw_data()
 
