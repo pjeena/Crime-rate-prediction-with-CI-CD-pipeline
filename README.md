@@ -3,6 +3,10 @@
 
 This is a project that aims to predict crime rates in real-time using machine learning algorithms and data from different sources, including [San Francisco government data](https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-2018-to-Present/wg3w-h783), [weather data](https://dev.meteostat.net/python/), and [basketball schedule data](https://www.basketball-reference.com/). The project also includes a CI/CD pipeline to automate the data processing, model training, and deployment.
 
+[Web application](https://pjeena-real-time-crime-rate-detection-using-ci-cd-app-knxaip.streamlit.app/)
+
+[Tableau Dashboard](https://public.tableau.com/views/Book1_16828944191920/CrimesSanFrancisco?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+
 
 ![embed](https://github.com/pjeena/Real-time-crime-rate-detection-using-CI-CD/blob/main/architecture.jpeg)
 
